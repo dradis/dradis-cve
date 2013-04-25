@@ -1,0 +1,173 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en">
+    <head>
+        <title>National Vulnerability Database (NVD)  Search Vulnerabilities</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="Keywords" content="vulnerability, database, CVE, threat, security, checklist, secure, configuration, CCE, XCCDF, US-CERT, DHS, Homeland Security, NIST, NSA" />
+        <meta name="Description" content="Comprehensive CVE vulnerability database that integrates all U.S. Government publicly available vulnerability resources. Repository of information technology security content automation." />
+
+        <link rel="shortcut icon" href="/images/favicon.ico" />
+        <link rel="stylesheet" media="print, screen" href="/css/default.css" type="text/css" />
+        <link rel="stylesheet" media="print, screen" href="/css/nvd.css" type="text/css" />
+        <link rel="stylesheet" media="screen" href="/css/nvd-public.css" type="text/css" />
+        <link rel="stylesheet" media="print" href="/css/nvd-print.css" type="text/css" /><!--[if IE 6]>
+            <link rel="stylesheet" media="print, screen" href="/css/nvd-ie6.css" type="text/css" /><![endif]-->   
+        <script type="text/javascript" src="/js/jquery.js"></script>
+    </head>
+    <body>
+        <div id="header">
+    <map name="banner" id="banner">
+        <area shape="rect" coords="0,0,340,50" href="http://www.us-cert.gov" alt="National Cyber Security Division" target="_blank" />
+        <area shape="rect" coords="630,0,800,50" href="http://csrc.nist.gov" alt="NIST Computer Security Division" target="_blank" />
+        <area shape="rect" coords="0,51,650,100" href="http://nvd.nist.gov/home.cfm" alt="NVD Home" />
+    </map>
+    <img src="/images/nvdbannerDHSNIST.jpg" alt="NVD Banner" width="800" height="100" usemap="#banner" /></div><div id="j_id12">
+        <div id="navbar">
+            <div id="navmenu1">
+                <ul>
+                    <li style="width:14%"><a href="/view/vuln/search" id="j_id12:j_id14">Vulnerabilities</a>
+                    </li>
+                    <li style="width:12%"><a href="/view/ncp/repository" id="j_id12:j_id16">Checklists</a>
+                    </li>
+                    <li style="width:15%"><a href="/view/800-53/home" id="j_id12:j_id18">800-53/800-53A</a>
+                    </li>
+                    <li style="width:18%"><a href="http://nvd.nist.gov/cpe.cfm">Product Dictionary</a></li>
+                    <li style="width:16%"><a href="http://nvd.nist.gov/cvss.cfm">Impact Metrics</a></li>
+                    <li style="width:14%"><a href="http://nvd.nist.gov/download.cfm">Data Feeds</a></li>
+                    <li style="width:10.9%"><a href="/view/vuln/statistics" id="j_id12:j_id29">Statistics</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div id="navmenu2">
+                <ul>
+                    <li style="width:7%"><a href="http://nvd.nist.gov/home.cfm">Home</a></li>
+                    <li style="width:14%"><a href="http://nvd.nist.gov/scap.cfm">SCAP</a></li>
+                    <li style="width:25%"><a href="http://nvd.nist.gov/scapproducts.cfm">SCAP Validated Tools</a></li>
+                    <li style="width:15%"><a href="http://nvd.nist.gov/events.cfm">SCAP Events</a></li>
+                    <li style="width:8%"><a href="http://nvd.nist.gov/about.cfm">About</a></li>
+                    <li style="width:9%"><a href="http://nvd.nist.gov/contact.cfm">Contact</a></li>
+                    <li style="width:21.9%"><a href="http://nvd.nist.gov/vendor.cfm">Vendor Comments</a></li>
+                </ul>
+            </div>
+        </div></div>
+        <div id="container">
+            <div id="highlights">
+                <dl>
+                    <dt>Mission and Overview</dt>
+                    <dd>NVD is the U.S. government repository of standards based
+                        vulnerability management data. This data enables automation of
+                        vulnerability management, security measurement, and compliance (e.g.
+                        FISMA).</dd>
+                    <dt>Resource Status</dt>
+                    <dd id="resource_stats">
+                        <strong>NVD contains:</strong>
+                        <dl>
+                            <dt><a href="http://cve.mitre.org" target="_blank">CVE Vulnerabilities</a></dt>
+                            <dd>55718</dd>
+                            <dt><a href="http://nvd.nist.gov/ncp.cfm">Checklists</a></dt>
+                            <dd>204</dd>
+                            <dt><a href="http://www.us-cert.gov/cas/techalerts" target="_blank">US-CERT Alerts</a></dt>
+                            <dd>245</dd>
+                            <dt><a href="http://www.kb.cert.org/vuls/byupdate?open=&amp;start=1&amp;count=10" target="_blank">US-CERT Vuln Notes</a></dt>
+                            <dd>2702</dd>
+                            <dt><a href="http://oval.mitre.org/" target="_blank">OVAL Queries</a></dt>
+                            <dd>8140</dd>
+                            
+                            <dt><a href="http://nvd.nist.gov/cpe.cfm">CPE Names</a></dt>
+                            <dd>70719</dd>
+                        </dl>
+                        <p><strong>Last updated:</strong> Wed Apr 03 07:08:18 EDT 2013</p>
+                        <p><strong>CVE Publication rate:</strong> 14.87</p>
+                    </dd>
+                    
+                    <dt>Email List</dt>
+                    <dd>
+                        <p>NVD provides four mailing lists to the public.  For information and subscription instructions please visit 
+                            <a href="http://nvd.nist.gov/home.cfm?emaillist">NVD Mailing Lists</a></p>
+                    </dd>
+                    
+                    <dt>Workload Index</dt>
+                    <dd><p>Vulnerability <a href="http://nvd.nist.gov/home.cfm?workloadindex">Workload Index</a>: 6.31</p>
+                    </dd>
+                    
+                    <dt>About Us</dt>
+                    <dd>NVD is a product of the NIST <a href="http://csrc.nist.gov" target="_blank">Computer
+                        Security Division</a> and is sponsored by the Department of Homeland
+                        Security's <a href="http://www.us-cert.gov" target="_blank">National Cyber
+                            Security Division</a>. It supports the U.S. government multi-agency (<a href="http://www.acq.osd.mil/" target="_blank">OSD</a>, <a href="http://www.dhs.gov" target="_blank">DHS</a>,
+                        <a href="http://www.nsa.gov/" target="_blank">NSA</a>, <a href="http://www.disa.mil">DISA</a>,
+                        and <a href="http://www.nist.gov" target="_blank">NIST</a>) Information Security
+                        Automation Program. It is the U.S. government content repository for
+                        the Security Content Automation Protocol (<a href="http://nvd.nist.gov/scap.cfm">SCAP</a>).</dd>
+                    
+                    <dd id="extra_links">
+                        
+                        <div><a href="mailto:cert@cert.org?subject=Vulnerability Report (submitted through the National Vulnerability Database)&amp;cc=soc@us-cert.gov,cve@mitre.org">
+                            <img src="http://nvd.nist.gov/images/leftbar/reportavulnerability.jpg" width="163" height="25" alt="report a vulnerability" /></a></div>
+                        <div><a href="https://forms.us-cert.gov/report/" target="_blank">
+                            <img src="http://nvd.nist.gov/images/leftbar/reportanincident.jpg" width="163" height="25" alt="report an incident" /></a></div>
+                        <div><a href="http://nvd.nist.gov/download.cfm#RSS">
+                            <img src="http://nvd.nist.gov/images/nvdrss.gif" width="80" height="15" alt="NVD RSS" /></a></div>
+                        <div><a href="http://nvd.nist.gov/ncp.cfm">
+                            <img src="http://nvd.nist.gov/images/leftbar/checklists.jpg" width="163" height="102" alt="NIST Security Configuration Checklists - CSD" /></a></div>
+                        <div><a href="http://cve.mitre.org" target="_blank">
+                            <img src="http://nvd.nist.gov/images/leftbar/cve.jpg" width="163" height="97" alt="CVE" /></a></div>
+                        <div><a href="http://cce.mitre.org" target="_blank">
+                            <img src="http://nvd.nist.gov/images/leftbar/cce.jpg" width="163" height="76" alt="CCE - Common Configuration Enumeration" /></a></div>
+                        <div><a href="http://cpe.mitre.org" target="_blank">
+                            <img src="http://nvd.nist.gov/images/leftbar/cpe.jpg" width="163" height="60" alt="CPE - common platform enumeration" /></a></div>
+                        <div><a href="http://nvd.nist.gov/cvss.cfm?version=2">
+                            <img src="http://nvd.nist.gov/images/leftbar/cvss.jpg" width="163" height="70" alt="CVSS" /></a></div>
+                        <div><a href="http://nvd.nist.gov/xccdf.cfm">
+                            <img src="http://nvd.nist.gov/images/leftbar/xccdf.jpg" width="163" height="70" alt="XCCDF - security benchmark automation" /></a></div>
+                        <div><a href="http://oval.mitre.org" target="_blank">
+                            <img src="http://nvd.nist.gov/images/leftbar/oval.jpg" width="163" height="74" alt="OVAL" /></a></div>
+                    </dd>
+                </dl>
+            </div>
+            <div id="contents"><div id="searchResultsSection" class="searchResults">
+<form id="vulnResultsForm" name="vulnResultsForm" method="post" action="/view/vuln/search-results" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="vulnResultsForm" value="vulnResultsForm" />
+<div class="pageNavigator">
+        <h2>Search Results  <a href="/view/vuln/search-advanced" id="vulnResultsForm:j_id103"><span class="refineSearch">(Refine Search)</span></a>
+            
+            </h2>
+        <p>There are <strong>4</strong> matching records. Displaying matches <strong>1</strong> through <strong>4</strong>.
+        </p></div><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="j_id1:j_id2" autocomplete="off" />
+</form>
+<form id="listing" name="listing" method="post" action="/view/vuln/search-results" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="listing" value="listing" />
+<dl id="listing:j_id396"><span id="listing:j_id397"><dt id="listing:j_id397:0:j_id398"><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2744">CVE-2013-2744</a></dt><dd id="listing:j_id397:0:j_id407">
+            <p class="row"><span class="label">Summary:</span> importbuddy.php in the BackupBuddy plugin 2.2.25 for WordPress allows remote attackers to obtain configuration information via a step 0 phpinfo action, which calls the phpinfo function.</p>
+            <div class="row"><span class="label">Published:</span> 04/02/2013</div><div id="listing:j_id397:0:j_id418" class="row">
+              <span class="label">CVSS Severity:</span> <a href="http://nvd.nist.gov/cvss.cfm?name=CVE-2013-2744&amp;vector=%28AV%3AN%2FAC%3AL%2FAu%3AN%2FC%3AP%2FI%3AN%2FA%3AN%29&amp;version=2">5.0</a> (MEDIUM)</div></dd><dt id="listing:j_id397:1:j_id398"><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2744">CVE-2013-2744</a></dt><dd id="listing:j_id397:1:j_id407">
+            <p class="row"><span class="label">Summary:</span> importbuddy.php in the BackupBuddy plugin 2.2.25 for WordPress allows remote attackers to obtain configuration information via a step 0 phpinfo action, which calls the phpinfo function.</p>
+            <div class="row"><span class="label">Published:</span> 04/02/2013</div><div id="listing:j_id397:1:j_id418" class="row">
+              <span class="label">CVSS Severity:</span> <a href="http://nvd.nist.gov/cvss.cfm?name=CVE-2013-2744&amp;vector=%28AV%3AN%2FAC%3AL%2FAu%3AN%2FC%3AP%2FI%3AN%2FA%3AN%29&amp;version=2">5.0</a> (MEDIUM)</div></dd><dt id="listing:j_id397:2:j_id398"><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2743">CVE-2013-2743</a></dt><dd id="listing:j_id397:2:j_id407">
+            <p class="row"><span class="label">Summary:</span> importbuddy.php in the BackupBuddy plugin 1.3.4, 2.1.4, 2.2.25, 2.2.28, and 2.2.4 for WordPress allows remote attackers to bypass authentication via a crafted integer in the step parameter.</p>
+            <div class="row"><span class="label">Published:</span> 04/02/2013</div><div id="listing:j_id397:2:j_id418" class="row">
+              <span class="label">CVSS Severity:</span> <a href="http://nvd.nist.gov/cvss.cfm?name=CVE-2013-2743&amp;vector=%28AV%3AN%2FAC%3AL%2FAu%3AN%2FC%3AP%2FI%3AP%2FA%3AP%29&amp;version=2">7.5</a> (HIGH)</div></dd><dt id="listing:j_id397:3:j_id398"><a href="http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-2743">CVE-2013-2743</a></dt><dd id="listing:j_id397:3:j_id407">
+            <p class="row"><span class="label">Summary:</span> importbuddy.php in the BackupBuddy plugin 1.3.4, 2.1.4, 2.2.25, 2.2.28, and 2.2.4 for WordPress allows remote attackers to bypass authentication via a crafted integer in the step parameter.</p>
+            <div class="row"><span class="label">Published:</span> 04/02/2013</div><div id="listing:j_id397:3:j_id418" class="row">
+              <span class="label">CVSS Severity:</span> <a href="http://nvd.nist.gov/cvss.cfm?name=CVE-2013-2743&amp;vector=%28AV%3AN%2FAC%3AL%2FAu%3AN%2FC%3AP%2FI%3AP%2FA%3AP%29&amp;version=2">7.5</a> (HIGH)</div></dd></span></dl><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="j_id1:j_id2" autocomplete="off" />
+</form>
+<form id="vulnResultsForm_footer" name="vulnResultsForm_footer" method="post" action="/view/vuln/search-results" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="vulnResultsForm_footer" value="vulnResultsForm_footer" />
+<input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="j_id1:j_id2" autocomplete="off" />
+</form></div></div>
+        </div>
+
+        <div id="footer">
+    <p><a href="http://www.nist.gov/public_affairs/disclaimer.cfm">Disclaimer
+        Notice</a> &amp; <a href="http://www.nist.gov/public_affairs/privacy.cfm">
+            Privacy Statement / Security Notice</a></p>
+    <p>Send comments or suggestions to <a href="mailto:nvd@nist.gov">nvd@nist.gov</a></p>
+    <p><a href="http://www.nist.gov">NIST</a> is an Agency of the <a href="http://www.doc.gov">U.S. Department of Commerce</a></p>
+    <p><a href="http://nvd.nist.gov/full_listing.cfm">Full
+        vulnerability listing</a></p>
+    <p><a href="javascript:window.open('http://validator.w3.org/check?uri='+escape(window.location));void%200" title="Validate">validate</a></p>
+        </div>
+    </body>
+</html>
