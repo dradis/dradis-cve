@@ -7,7 +7,7 @@ class DradisTasks < Thor
    def keyword(query)
      require 'config/environment'
 
-     results = CveImport::Filters::NVDKeyword.run(:query => query)
+     results = Dradis::Plugins::CVE::Filters::NVDKeyword.run(query: query)
 
      puts "CVE Search\n==========="
      puts "#{results.size} results"
