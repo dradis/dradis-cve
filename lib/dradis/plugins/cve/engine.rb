@@ -4,7 +4,7 @@ module Dradis::Plugins::CVE
 
     include ::Dradis::Plugins::Base
     provides :import
-    description 'Import entries from the CVE database'
+    description 'NIST CVE'
 
     addon_settings :cve do
       settings.default_url    = 'http(s)'

@@ -1,2 +1,3 @@
-require 'net/http'
+require 'open-uri'
+
 require 'dradis/plugins/cve'

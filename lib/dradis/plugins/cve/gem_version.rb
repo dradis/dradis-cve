@@ -1,13 +1,21 @@
-module CveImport  
-  module Meta
-    NAME = "Search CVE records of the National Vulnerability Database"
-    # change this to the appropriate version
-    module VERSION #:nodoc:
-      MAJOR = 2
-      MINOR = 10
-      TINY = 0
+module Dradis
+  module Plugins
+    module CVE
 
-      STRING = [MAJOR, MINOR, TINY].join('.')
+      # Returns the version of the currently loaded Mediawiki plugin as a <tt>Gem::Version</tt>
+      def self.gem_version
+        Gem::Version.new VERSION::STRING
+      end
+
+      module VERSION
+        MAJOR = 3
+        MINOR = 20
+        TINY = 0
+        PRE = nil
+
+        STRING = [MAJOR, MINOR, TINY, PRE].compact.join('.')
+      end
+
     end
   end
 end
